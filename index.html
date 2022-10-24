@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Color generator</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="radio">
+        <input type="checkbox" id="toggle" class="toggle-item">
+        <label for="toggle"></label>
+    </div>
+    <div class="half">
+        <div class="colorPicker">
+            <div class="swatchGrid" id="swatch-grid">
+                <div class="btn"  data-color="#000">
+                    <i class="fa-solid fa-power-off"  data-color="#000"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="half readout">
+        <div class="swatchGrid" id="swatch-grid1">
+            <div class="swatch" data-color="#dd2a1b" style="background: #dd2a1b"></div>
+            <div class="swatch" data-color="#f17e00" style="background: #f17e00"></div>
+            <div class="swatch" data-color="#fae013" style="background: #fae013"></div>
+            <div class="swatch" data-color="#3b8456" style="background: #3b8456"></div>
+            <div class="swatch" data-color="#00a3d3" style="background: #00a3d3"></div>
+            <div class="swatch" data-color="#000aff" style="background: #000aff"></div>
+            <div class="swatch" data-color="#dc00ff" style="background: #dc00ff"></div>
+            <div class="swatch" data-color="#0054ff" style="background: #0054ff"></div>
+        </div>
+        <span class="title">Selected Color:</span>
+        <div id="values"></div>
+    </div>
+</div>
+
+<script src="iro.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

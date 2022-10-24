@@ -1,0 +1,135 @@
+body {
+    color: #fff;
+    background: #171F30;
+    line-height: 150%;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.wrap {
+    min-height: 97vh;
+    max-width: 225px;
+    margin: 0 auto;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.half {
+    width: 50%;
+    padding: 32px 0 0;
+}
+
+#values {
+    font-family: monospace;
+    line-height: 150%;
+}
+
+.swatchGrid {
+    display: grid;
+    grid-template-columns: repeat(8, 28px);
+    grid-template-rows: repeat(2, 28px);
+    grid-gap: 6px;
+    margin-bottom: 1em;
+}
+
+.swatch {
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+circle{
+    fill: #ffffff!important;
+}
+
+a {
+    color: MediumSlateBlue;
+}
+
+.IroSlider {
+    height: 6px!important;
+    border-radius: 4px!important;
+    margin: 35px 0!important;
+    width: 280px!important;
+}
+
+.IroHandle{
+    top: -22px!important;
+}
+.white {
+    background: #e9e7e7;
+    color: #000000;
+}
+
+.btn {
+    width: 99%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 93px;
+    position: relative;
+    top: 7.2rem;
+    left: 2.1rem;
+    z-index: 2;
+    background: #000;
+    border: none;
+    color: #ffffff;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-white {
+    background: #ffffff!important;
+}
+
+.toggle-item {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.toggle-item + label {
+    display: flex;
+    width: 5em;
+    height: 2em;
+    background: #aaa;
+    border-radius: 50px;
+    position: relative;
+    transition: all .3s ease;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px #222;
+}
+.toggle-item + label:after {
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background: #fff;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+    transition: all .2s ease;
+}
+.toggle-item:checked + label {
+    background: #000;
+}
+.toggle-item:checked + label:after {
+    left: 3.1em;
+}
+
+@media(max-width: 700px) {
+    .wrap {
+        min-height: 97vh;
+        max-width: 291px;
+        margin: 0 auto;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .half {
+        width: 76%;
+        padding: 32px 0 0;
+    }
+}
